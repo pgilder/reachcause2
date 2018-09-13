@@ -1,0 +1,59 @@
+/*! Place your custom styles here */
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+    position: absolute;
+    margin-left: 55px !important;
+    margin-top: 4px;
+    width: 35px;
+    border-radius: 60px;
+    margin-top: -9px;
+}
+
+
+.card-1 .card__avatar img {
+  border-radius: 50px;
+}
+
+button#dataview-insert-button {
+    padding: 10px 40px;
+    background: #4a90e2;
+    text-transform: uppercase;
+    border: 0;
+}
+
+
+input#dataview-search-input {
+    margin-left: 16px;
+    width: 47vw;
+}
+
+section.text-left.agency-photo {
+    text-align: -webkit-center;
+    width: 66vw;
+    left: 0;
+    right: 0;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+}
+
+.form-group.field-agency_photo.input-radio.input-radio--innerlabel {
+    display: flex;
+}
+
+
+
+.form-group img {
+    width: auto;
+    height: 86px;
+    position: relative;
+    top: 50px;
+    left: -154px;
+}
+
+
+.card-1 .card__body img {
+    margin-bottom: 0.92857143em;
+    height: 217px;
+    width: auto;
+}
