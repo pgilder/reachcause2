@@ -1,15 +1,15 @@
 var pageSession = new ReactiveDict();
 
 Template.Agencies.onCreated(function() {
-	
+
 });
 
 Template.Agencies.onDestroyed(function() {
-	
+
 });
 
 Template.Agencies.onRendered(function() {
-	
+
 	Meteor.defer(function() {
 		globalOnRendered();
 		$("input[autofocus]").focus();
@@ -17,11 +17,11 @@ Template.Agencies.onRendered(function() {
 });
 
 Template.Agencies.events({
-	
+
 });
 
 Template.Agencies.helpers({
-	
+
 });
 
 var AgenciesViewItems = function(cursor) {
@@ -83,16 +83,16 @@ var AgenciesViewExport = function(cursor, fileType) {
 }
 
 Template.AgenciesView.onCreated(function() {
-	
+
 });
 
 Template.AgenciesView.onDestroyed(function() {
-	
+
 });
 
 Template.AgenciesView.onRendered(function() {
 	pageSession.set("AgenciesViewStyle", "table");
-	
+
 });
 
 Template.AgenciesView.events({
@@ -174,7 +174,7 @@ Template.AgenciesView.events({
 		AgenciesViewExport(this.agency_list, "json");
 	}
 
-	
+
 });
 
 Template.AgenciesView.helpers({
@@ -208,20 +208,20 @@ Template.AgenciesView.helpers({
 		return pageSession.get("AgenciesViewStyle") == "gallery";
 	}
 
-	
+
 });
 
 
 Template.AgenciesViewTable.onCreated(function() {
-	
+
 });
 
 Template.AgenciesViewTable.onDestroyed(function() {
-	
+
 });
 
 Template.AgenciesViewTable.onRendered(function() {
-	
+
 });
 
 Template.AgenciesViewTable.events({
@@ -248,23 +248,23 @@ Template.AgenciesViewTable.helpers({
 
 
 Template.AgenciesViewTableItems.onCreated(function() {
-	
+
 });
 
 Template.AgenciesViewTableItems.onDestroyed(function() {
-	
+
 });
 
 Template.AgenciesViewTableItems.onRendered(function() {
-	
+
 });
 
 Template.AgenciesViewTableItems.events({
-	
+
 
 	"click td": function(e, t) {
 		e.preventDefault();
-		
+
 		Router.go("agencies.details", mergeObjects(Router.currentRouteParams(), {agencyId: this._id}));
 		return false;
 	},
@@ -320,13 +320,18 @@ Template.AgenciesViewTableItems.events({
 		e.preventDefault();
 		Router.go("agencies.update", mergeObjects(Router.currentRouteParams(), {agencyId: this._id}));
 		return false;
+	},
+	"click #agencies-button": function(e, t) {
+		e.preventDefault();
+		Router.go("agencies.details", mergeObjects(Router.currentRouteParams(), {agencyId: this._id}));
+		return false;
 	}
 });
 
 Template.AgenciesViewTableItems.helpers({
-	
 
-	"checked": function(value) { return value ? "checked" : "" }, 
+
+	"checked": function(value) { return value ? "checked" : "" },
 	"editButtonClass": function() {
 		return Agency.userCanUpdate(Meteor.userId(), this) ? "" : "hidden";
 	},

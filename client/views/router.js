@@ -44,7 +44,8 @@ Router.privateRoutes = [
 	"agencies.details",
 	"agencies.insert",
 	"agencies.update",
-	"editor"
+	"editor",
+	"onboarding"
 ];
 
 Router.freeRoutes = [
@@ -70,7 +71,7 @@ Router.roleMap = [
 
 Router.defaultFreeRoute = "home_public";
 Router.defaultPublicRoute = "home_public";
-Router.defaultPrivateRoute = "agencies";
+Router.defaultPrivateRoute = "onboarding";
 
 Router.waitOn(function() {
 	Meteor.subscribe("current_user_data");
@@ -100,6 +101,7 @@ Router.map(function () {
 	this.route("/about", {name: "about", title: ""});
 	this.route("/our-work", {name: "ourWork", title: ""});
 	this.route("/why", {name: "why", title: ""});
+	this.route("/onboarding", {name: "onboarding", title: ""});
 	this.route("/editor", {name: "editor", title: ""});
 	this.route("/verify_email/:verifyEmailToken", {name: "verify_email", title: "", controller: "VerifyEmailController"});
 	this.route("/forgot_password", {name: "forgot_password", title: "", controller: "ForgotPasswordController"});
