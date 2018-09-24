@@ -48,7 +48,7 @@ section.cover.height-80.imagebg.nonprofit-9 {
     background-size: cover;
 }
 section.cover.height-80.imagebg.nonprofit-10 {
-    background-image: url(img/nonprofit-10.jpg)
+    background-image: url(img/nonprofit-10.jpg);
     background-repeat: no-repeat;
     background-size: cover;;
 }
