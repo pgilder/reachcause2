@@ -119,7 +119,7 @@
 				</label>
 				<div class="input-div">
 					<p class="form-control-static  control-field-agency_url">
-						{{agency.Agency_URL}}
+						{{agency.Agency_Photo}}
 					</p>
 				</div>
 			</div>
@@ -136,16 +136,16 @@
 
 
 <template name="detailademo">
-	<section class="cover height-80 imagebg text-center parallax" data-overlay="5">
+	<section class="cover height-80 imagebg text-center parallax {{agency.Agency_Photo}}" data-overlay="5">
                 <div class="background-image-holder background--top">
-                    <img alt="background" src="img/nonprofit-1.jpg" />
+                    <img alt="background" src="/img/{{agency.Agency_Photo}}.jpg" />
                 </div>
                 <div class="container pos-vertical-center">
                     <div class="row">
                         <div class="col-md-8">
-                            <img alt="Image" src="img/headline-2.png" />
+                            <img alt="Image" src="/img/{{agency.Agency_Logo}}.jpg" />
                             <h3>
-                                Empowering children through creative programs
+                                Welcome to {{agency.Agency_Name}}
                             </h3>
                             <a class="btn btn--primary type--uppercase" href="#">
                                 <span class="btn__text">

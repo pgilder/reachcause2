@@ -1,3 +1,54 @@
 .card-1 .card__body img {
     height: auto;
 }
+
+section.cover.height-80.imagebg.nonprofit-1 {
+    background-image: url(img/nonprofit-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.cover.height-80.imagebg.nonprofit-2 {
+    background-image: url(img/nonprofit-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.cover.height-80.imagebg.nonprofit-3 {
+    background-image: url(img/nonprofit-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.cover.height-80.imagebg.nonprofit-4 {
+    background-image: url(img/nonprofit-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.cover.height-80.imagebg.nonprofit-5 {
+    background-image: url(img/nonprofit-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.cover.height-80.imagebg.nonprofit-6 {
+    background-image: url(img/nonprofit-6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.cover.height-80.imagebg.nonprofit-7 {
+    background-image: url(img/nonprofit-7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.cover.height-80.imagebg.nonprofit-8 {
+    background-image: url(img/nonprofit-8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.cover.height-80.imagebg.nonprofit-9 {
+    background-image: url(img/nonprofit-9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.cover.height-80.imagebg.nonprofit-10 {
+    background-image: url(img/nonprofit-10.jpg)
+    background-repeat: no-repeat;
+    background-size: cover;;
+}
