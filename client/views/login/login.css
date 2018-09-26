@@ -12,3 +12,5 @@ a.btn.block.btn--icon.bg--twitter.type--uppercase {
   background-size: cover;
   background-position: bottom;
 }
+.animate-fading{animation:fading 3s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+h4.animate-fading {color: #F44336 !important;}

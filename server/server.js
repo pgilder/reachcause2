@@ -109,7 +109,7 @@ Meteor.startup(function() {
 		}
 	}
 
-	
+
 });
 
 Meteor.methods({
@@ -292,7 +292,7 @@ Users.before.update(function(userId, doc, fieldNames, modifier, options) {
 });
 
 Accounts.onLogin(function (info) {
-	
+
 });
 
 Accounts.urls.resetPassword = function (token) {
@@ -306,3 +306,18 @@ Accounts.urls.verifyEmail = function (token) {
 Accounts.urls.enrollAccount = function (token) {
 	return Meteor.absoluteUrl('create_password/' + token);
 };
+
+
+
+// Server
+/*
+Meteor.publish('userData', function () {
+  if (this.userId) {
+    return Meteor.users.find({ _id: this.userId }, {
+      fields: { other: 1, things: 1 }
+    });
+  } else {
+    this.ready();
+  }
+});
+*/
