@@ -9,23 +9,27 @@
 </template>
 
 <template name="UserSettingsProfileEditForm">
-	<div id="user-settings-profile-edit-form" class="">
+	<div id="user-settings-profile-edit-form account-profile" class="account-tab boxed boxed--lg boxed--border">
 		<h2 id="component-title">
 			Edit your profile
 		</h2>
-		<form role="form">
-			{{#if errorMessage}}
-			<div class="alert alert-warning">
-				{{errorMessage}}
-			</div>
-			{{/if}}
 
-			{{#if infoMessage}}
-			<div class="alert alert-success">
-				{{infoMessage}}
-			</div>
-			{{/if}}
-			<div class="form-group  field-profile-name">
+		<form role="form">
+			<div class="row">
+				<div class="col-md-12">
+					{{#if errorMessage}}
+					<div class="alert alert-warning">
+						{{errorMessage}}
+					</div>
+					{{/if}}
+
+					{{#if infoMessage}}
+					<div class="alert alert-success">
+						{{infoMessage}}
+					</div>
+					{{/if}}
+			 </div>
+			<div class="col-md-6 form-group  field-profile-name">
 				<label for="profile.name">
 					Name
 				</label>
@@ -37,7 +41,7 @@
 					</span>
 				</div>
 			</div>
-			<div class="form-group  field-profile-email">
+			<div class="col-md-6 form-group  field-profile-email">
 				<label for="profile.email">
 					E-mail
 				</label>
@@ -49,7 +53,7 @@
 					</span>
 				</div>
 			</div>
-			<div class="form-group  field-profile-facebook">
+			<div class="col-md-6 form-group  field-profile-facebook">
 				<label for="profile.facebook">
 					Facebook URL
 				</label>
@@ -61,7 +65,7 @@
 					</span>
 				</div>
 			</div>
-			<div class="form-group  field-profile-google">
+			<div class="col-md-6 form-group  field-profile-google">
 				<label for="profile.google">
 					Google+ URL
 				</label>
@@ -73,7 +77,7 @@
 					</span>
 				</div>
 			</div>
-			<div class="form-group  field-profile-twitter">
+			<div class="col-md-6 form-group  field-profile-twitter">
 				<label for="profile.twitter">
 					Twitter ID
 				</label>
@@ -85,7 +89,7 @@
 					</span>
 				</div>
 			</div>
-			<div class="form-group  field-profile-website">
+			<div class="col-md-6 form-group  field-profile-website">
 				<label for="profile.website">
 					Website URL
 				</label>
@@ -97,14 +101,26 @@
 					</span>
 				</div>
 			</div>
-			<div class="form-group">
+			<div class="col-md-12">
+					<div class="input-checkbox input-checkbox--switch">
+							<input type="checkbox" name="public-profile" />
+							<label></label>
+					</div>
+					<span>Allow my profile to be viewable by guests</span>
+			</div>
+			<div class="col-lg-3 col-md-4 form-group">
 				<div class="submit-div">
-					<button id="form-submit-button" class="btn btn-success" type="submit">
+					<button id="form-submit-button" class="btn btn--primary type--uppercase" type="submit">
 						Save
 					</button>
 				</div>
 			</div>
+		</div>
 		</form>
+		<div class="col-md-12">
+				<label>Bio:</label>
+				<textarea rows="4" name="bio"></textarea>
+		</div>
 	</div>
 	<div class="main-container">
 			<section class="bg--secondary space--sm">
