@@ -1,8 +1,7 @@
 .card-1 .card__body img {
-    height: 180px !important;
-    width: 100vw;
-    background-size: cover;
-    background-position: center;
+  min-height: 171px;
+  height: auto;
+  width: 100vw;  
 }
 
 section.cover.height-80.imagebg.nonprofit-1 {

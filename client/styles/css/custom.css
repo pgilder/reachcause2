@@ -57,3 +57,15 @@ section.text-left.agency-photo {
     height: 217px;
     width: auto;
 }
+.card-1 .card__body img {
+    min-height: 216px !important;
+    height: auto;
+    width: 100vw;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    color: #2c2c2c;
+}

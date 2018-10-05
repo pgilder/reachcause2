@@ -16,13 +16,18 @@
 													Login with Twitter
 											</span> </a>
 											<hr>
-											<p>Login using your Stack account</p>
+
+												{{#if errorMessage}}
+													<h4 class="animate-fading">{{errorMessage}}</h4>
+												{{else}}
+													<h4 class="">Enter details below</h4>
+												{{/if}}
+
+
 
 											<form id="login_form" role="form">
 													<div id="login-with-password" class="row">
-														{{#if errorMessage}}
-															{{errorMessage}}
-														{{/if}}
+
 															<div class="col-md-12">
 																<input id="login_email" type="text" placeholder="Email address" required autofocus>
 															</div>

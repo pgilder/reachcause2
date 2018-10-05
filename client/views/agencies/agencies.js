@@ -1,4 +1,8 @@
+import { Template } from 'meteor/templating'
 var pageSession = new ReactiveDict();
+
+
+
 
 Template.Agencies.onCreated(function() {
 
