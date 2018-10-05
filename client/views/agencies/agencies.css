@@ -1,5 +1,8 @@
 .card-1 .card__body img {
-    height: auto;
+    height: 180px !important;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
 }
 
 section.cover.height-80.imagebg.nonprofit-1 {
@@ -51,4 +54,18 @@ section.cover.height-80.imagebg.nonprofit-10 {
     background-image: url(img/nonprofit-10.jpg);
     background-repeat: no-repeat;
     background-size: cover;;
+}
+
+
+button.btn.btn-default {
+    padding: 10px 40px;
+}
+
+button.btn.btn-danger {
+    padding: 10px 40px;
+    border: 0;
+}
+button.btn.btn-success {
+      padding: 10px 40px;
+      border: 0;
 }
