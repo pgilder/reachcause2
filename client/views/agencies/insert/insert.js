@@ -86,7 +86,7 @@ Template.AgenciesInsertForm.events({
 					}; break;
 				}
 			}
-
+			alert("You Nonprofit has been created. Click ok to continue."),
 			Router.go("agencies", mergeObjects(Router.currentRouteParams(), {}));
 		}
 

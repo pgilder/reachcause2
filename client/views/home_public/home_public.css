@@ -8,3 +8,8 @@
 section.cover.height-80.imagebg.text-center.section--ken-burns.bg-publichome:before {
     background: #002538;
 }
+
+section.text-center.unpad--bottom.switchable.cta.cta-3.switchable--switch.logo-section {
+    background: #fafafa;
+    height: 80px;
+}

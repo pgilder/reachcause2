@@ -1,7 +1,7 @@
 <template name="AgenciesInsert">
 	<div class="main-container">
 		<div class="row justify-content-center">
-				<div class="col-sm-12 col-md-12 col-lg-8">
+				<div class="col-sm-12 col-md-12 col-lg-12">
 					<section class="text-left">
 								{{> AgenciesInsertForm}}
 					</section>
@@ -13,6 +13,76 @@
 
 <template name="AgenciesInsertForm">
 	<div id="agencies-insert-form" class="">
+	<section class="text-center imagebg" data-gradient-bg='#4876BD,#5448BD,#8F48BD,#BD48B1'>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-8">
+                            <form class="form--inline form-email" data-success="Thanks for your enquiry, we'll be in touch shortly." data-error="Please fill in all fields correctly.">
+                                <span class="h4 inline-block">My Nonprofit name is</span>
+                                <input type="text" name="Agency_Name" placeholder="Non Profit Name" class="validate-required" />
+                                <span class="h4 inline-block">which helps</span>
+																<div class="input-select">
+                                    <select class="validate-required">
+                                        <option selected="" value="">Select Cause</option>
+                                        <option value="Design">Feed</option>
+                                        <option value="Development">Rescue</option>
+                                        <option value="Branding">Educate</option>
+                                    </select>
+                                </div>
+																<div class="input-select">
+                                    <select class="validate-required">
+                                        <option selected="" value="">Select Problem</option>
+                                        <option value="Design">Hungry</option>
+                                        <option value="Development">Neglected</option>
+                                        <option value="Branding">Abused</option>
+                                    </select>
+                                </div>
+																<div class="input-select">
+                                    <select class="validate-required">
+                                        <option selected="" value="">Select Receiver</option>
+                                        <option value="Design">Children</option>
+                                        <option value="Development">Animals</option>
+                                        <option value="Branding">Wildlife</option>
+                                    </select>
+                                </div>
+                                <span class="h4 inline-block">I'm looking for someone to work with us on</span>
+                                <input type="text" name="Company" placeholder="Company Name" class="validate-required" />
+																<div class="input-select">
+                                    <select class="validate-required">
+                                        <option selected="" value="">Select</option>
+                                        <option value="Design">Web Design</option>
+                                        <option value="Development">Web Development</option>
+                                        <option value="Branding">Branding</option>
+                                    </select>
+                                </div>
+                                <span class="h4 inline-block">Budget-wise, I am looking to keep around the</span>
+                                <div class="input-select">
+                                    <select class="validate-required">
+                                        <option selected="" value="">Select</option>
+                                        <option value="0-5k">&lt; 5,000</option>
+                                        <option value="5k-10k">5,000 - 10,000</option>
+                                        <option value="10k-20k">10,0000 +</option>
+                                    </select>
+                                </div>
+                                <span class="h4 inline-block">mark,</span>
+                                <span class="h4 inline-block">and I'm hoping to have the project complete around</span>
+                                <input type="text" name="Date" placeholder="Date / Timeframe" class="validate-required" />
+                                <span class="h4 inline-block">Contact me via</span>
+                                <input type="email" name="email" placeholder="Email Address" class="validate-required validate-email" />
+                                <span class="h4 inline-block">or</span>
+                                <input type="tel" name="Phone" placeholder="Phone Number" class="validate-required" />
+                                <span class="h4 inline-block">and we can discuss the project in more detail.</span>
+                                <div>
+                                    <button type="submit" class="btn btn--primary type--uppercase">Send Enquiry</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+
 		<h2 id="component-title">
 			Add New Organization
 		</h2>
@@ -51,6 +121,14 @@
 					<span id="error-text" class="help-block">
 					</span>
 				</div>
+			</div>
+			<div class="input-select">
+					<select class="validate-required">
+							<option id="drop-1" selected="" name="Agency_Address_3" value="" class="form-control " data-type="string">Select Problem</option>
+							<option id="drop-2" value="Design">Hungry</option>
+							<option id="drop-3" value="Development">Neglected</option>
+							<option id="drop-4" value="Branding">Abused</option>
+					</select>
 			</div>
 			<div class="form-group  field-agency_address_2">
 				<label for="Agency_Address_2">
