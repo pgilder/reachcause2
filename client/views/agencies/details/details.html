@@ -136,6 +136,21 @@
 
 
 <template name="detailademo">
+	<!-- Fundraise Up -->
+	<script>(function(w,d,s,n,a){if(!w[n]){var l='call,catch,on,once,set,then,track'
+	.split(','),i,o=function(n){return'function'==typeof n?o.l.push([arguments])&&o
+	:function(){return o.l.push([n,arguments])&&o}},t=d.getElementsByTagName(s)[0],
+	j=d.createElement(s);j.async=!0;j.src='https://cdn.fundraiseup.com/widget/'+a;
+	t.parentNode.insertBefore(j,t);o.s=Date.now();o.v=4;o.h=w.location.href;o.l=[];
+	for(i=0;i<7;i++)o[l[i]]=o(l[i]);w[n]=o}
+})(window,document,'script','FundraiseUp','{{agency.Agency_FRUP_ID}}');</script>
+	<!-- End Fundraise Up -->
+
+	<script>
+		FundraiseUp.on('checkoutOpen', function(details) {
+	           console.log(details.campaign);
+		});
+	</script>
 	<section class="cover height-80 imagebg text-center parallax {{agency.Agency_Photo}}" data-overlay="5">
                 <div class="background-image-holder background--top">
                     <img alt="background" src="/img/{{agency.Agency_Photo}}.jpg" />
@@ -147,7 +162,7 @@
                             <h3>
                                 Welcome to {{agency.Agency_Name}}
                             </h3>
-                            <a class="btn btn--primary type--uppercase" href="#">
+                            <a class="btn btn--primary type--uppercase" href="#givenow">
                                 <span class="btn__text">
                                     Donate Today
                                 </span>
